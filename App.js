@@ -5,7 +5,6 @@ import {
   Text,
   View,
   TextInput,
-  ScrollView,
   FlatList,
 } from "react-native";
 
