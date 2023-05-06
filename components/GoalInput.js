@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Button,
   StyleSheet,
@@ -9,6 +10,10 @@ import {
 
 function GoalInput(props) {
   const [enteredGoalText, setEnteredGoalText] = useState("");
+  function goalInputHandler(enteredText) {
+    setEnteredGoalText(enteredText);
+  }
+
   return (
     <View style={styles.inputContainer}>
       <TextInput
