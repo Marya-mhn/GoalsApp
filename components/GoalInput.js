@@ -9,7 +9,7 @@ function GoalInput(props) {
 
   function addGoalhandler() {
     props.onAddGoal(enteredGoalText);
-    //setEnteredGoalText("");
+    setEnteredGoalText("");
   }
 
   return (
