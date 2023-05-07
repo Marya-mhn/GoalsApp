@@ -1,11 +1,4 @@
-import {
-  Button,
-  StyleSheet,
-  Text,
-  View,
-  TextInput,
-  Pressable,
-} from "react-native";
+import { StyleSheet, Text, View, Pressable } from "react-native";
 
 function GoalItem(props) {
   return (
