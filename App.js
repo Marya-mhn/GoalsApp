@@ -15,7 +15,7 @@ export default function App() {
   function addGoalHandler(enteredGoalText) {
     setCourseGoals((currentCourseGoals) => [
       ...currentCourseGoals,
-      { text: enteredGoalText, key: Math.random().toString() },
+      { text: enteredGoalText, id: Math.random().toString() },
     ]);
     endAddGoalHandler();
   }
@@ -56,7 +56,7 @@ export default function App() {
               );
             }}
             keyExtractor={(item, index) => {
-              return item.key;
+              return item.id;
             }}
           />
         </View>
