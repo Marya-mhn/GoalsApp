@@ -4,14 +4,16 @@ import {
   Text,
   View,
   TextInput,
-  FlatList,
+  Pressable,
 } from "react-native";
 
 function GoalItem(props) {
   return (
-    <View style={styles.goalItem}>
-      <Text style={styles.goalText}>{props.text} </Text>
-    </View>
+    <Pressable>
+      <View style={styles.goalItem}>
+        <Text style={styles.goalText}>{props.text} </Text>
+      </View>
+    </Pressable>
   );
 }
 
